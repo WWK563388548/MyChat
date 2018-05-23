@@ -18,4 +18,5 @@
         completions."
     </string>
     <string name="sample_message">Hello!</string>
+    <string name="mychat_welcome">欢迎使用 MyChat</string>
 </resources>
