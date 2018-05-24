@@ -91,28 +91,6 @@
 
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/white" >
-
-        <EditText
-            android:id="@+id/register_confirm_password"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textColorHint="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/prompt_password_again"
-            android:imeActionId="@integer/register_form_finished"
-            android:imeActionLabel="@string/action_sign_up"
-            android:imeOptions="actionUnspecified"
-            android:inputType="textPassword"
-            android:maxLines="1"
-            android:textStyle="bold" />
-
-    </android.support.design.widget.TextInputLayout>
-
     <Button
         android:id="@+id/register_sign_up_button"
         style="?android:textAppearanceMedium"
