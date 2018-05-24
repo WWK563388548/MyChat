@@ -17,7 +17,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/baseline_question_answer_white_36"
+        android:background="@drawable/baseline_question_answer_white_24"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"/>
 
@@ -29,7 +29,7 @@
         android:textStyle="bold"
         android:textSize="24sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="24dp"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -95,6 +95,6 @@
         android:text="@string/action_register"
         android:onClick="registerNewUser"
         android:textStyle="bold"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
