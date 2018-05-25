@@ -18,19 +18,18 @@
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainChatActivity"
+        <activity
+            android:name=".MainChatActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize">
-        </activity>
-
-        <activity android:name=".RegisterActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".DashBoardActivity"></activity>
     </application>
 
 </manifest>
