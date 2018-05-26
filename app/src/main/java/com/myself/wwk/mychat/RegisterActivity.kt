@@ -1,5 +1,6 @@
 package com.myself.wwk.mychat
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
@@ -45,6 +46,7 @@ class RegisterActivity : AppCompatActivity() {
         mAuth!!.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { 
                     task: Task<AuthResult> ->
+
                         if (task.isSuccessful){
 
                             var currentUser = mAuth!!.currentUser
@@ -62,7 +64,6 @@ class RegisterActivity : AppCompatActivity() {
                             mDataBase = FirebaseDatabase.getInstance().reference
                                     .child("Users").child(userId)
 
-
                             // 使用hashmap去构筑user对象
                             var userObject = HashMap<String, String>()
                             userObject.put("user_name", userName)
@@ -74,8 +75,12 @@ class RegisterActivity : AppCompatActivity() {
                             mDataBase!!.setValue(userObject).addOnCompleteListener {
                                 task: Task<Void> ->
                                 if (task.isSuccessful){
-                                    Toast.makeText(this, "注册成功!", Toast.LENGTH_LONG)
-                                            .show()
+
+                                    var dashBoardIntent = Intent(this, DashBoardActivity::class.java)
+                                    dashBoardIntent.putExtra("name", userName)
+                                    startActivity(dashBoardIntent)
+                                    finish()
+
                                 } else {
                                     Toast.makeText(this, "注册失败..", Toast.LENGTH_LONG)
                                             .show()
