@@ -1,4 +1,4 @@
-package com.myself.wwk.mychat
+package com.myself.wwk.mychat.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.myself.wwk.mychat.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

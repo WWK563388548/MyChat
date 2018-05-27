@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/yellow"
-    tools:context="com.myself.wwk.mychat.LoginActivity"
+    tools:context="com.myself.wwk.mychat.activities.LoginActivity"
     android:gravity="bottom">
 
 
