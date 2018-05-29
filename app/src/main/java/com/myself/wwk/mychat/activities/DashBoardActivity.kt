@@ -44,6 +44,7 @@ class DashBoardActivity : AppCompatActivity() {
         return true
     }
 
+    // 设置menu中的各个选项
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         super.onOptionsItemSelected(item)
 
