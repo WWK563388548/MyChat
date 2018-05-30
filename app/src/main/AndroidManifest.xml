@@ -30,7 +30,8 @@
             android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".activities.DashBoardActivity" />
-        <activity android:name=".activities.SettingsActivity"></activity>
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.StatusActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.myself.wwk.mychat.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -43,5 +44,12 @@ class SettingsActivity : AppCompatActivity() {
 
             }
         })
+
+        // 传值到StatusActivity去修改status
+        settings_change_status.setOnClickListener {
+            var intent = Intent(this, StatusActivity::class.java)
+            intent.putExtra("status", settings_status_tag.text.toString().trim())
+            startActivity(intent)
+        }
     }
 }
