@@ -26,4 +26,6 @@
     <string name="settings">设置</string>
     <string name="change_pic">修改头像</string>
     <string name="change_status">修改个人状态</string>
+    <string name="default_username">UserName</string>
+    <string name="default_status">你好...</string>
 </resources>
