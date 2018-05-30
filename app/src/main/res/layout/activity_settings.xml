@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/settings_status_tag" />
 
     <Button
-        android:id="@+id/settings_image_status"
+        android:id="@+id/settings_change_status"
         android:layout_width="192dp"
         android:layout_height="51dp"
         android:layout_marginTop="12dp"
