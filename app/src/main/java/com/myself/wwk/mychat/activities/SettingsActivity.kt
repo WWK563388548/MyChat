@@ -15,6 +15,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.UploadTask
 import com.myself.wwk.mychat.R
+import com.squareup.picasso.Picasso
 import com.theartofdev.edmodo.cropper.CropImage
 import id.zelory.compressor.Compressor
 import kotlinx.android.synthetic.main.activity_settings.*
@@ -43,7 +44,7 @@ class SettingsActivity : AppCompatActivity() {
         mDatabase!!.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(dataSnapshot: DataSnapshot?) {
                 var userName = dataSnapshot!!.child("user_name").value
-                var image = dataSnapshot!!.child("image").value
+                var image = dataSnapshot!!.child("image").value.toString()
                 var status = dataSnapshot!!.child("status").value
                 var thumbImage = dataSnapshot!!.child("thumb_image").value
 
@@ -51,7 +52,11 @@ class SettingsActivity : AppCompatActivity() {
                 settings_username.text = userName.toString()
                 settings_status_tag.text = status.toString()
 
-
+                if(!image!!.equals("default")) {
+                    Picasso.get().load(image)
+                            .placeholder(R.drawable.profile_image)
+                            .into(settings_profile_id)
+                }
             }
 
             override fun onCancelled(dataBaseErrorSnapshot: DatabaseError?) {

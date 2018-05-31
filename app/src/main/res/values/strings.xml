@@ -28,7 +28,7 @@
     <string name="change_status">修改个人状态</string>
     <string name="default_username">UserName</string>
     <string name="default_status">你好...</string>
-    <string name="status_title">输入个人状态</string>
-    <string name="status_update_hint">个人状态</string>
+    <string name="status_title">更新个人状态</string>
+    <string name="status_update_hint">点击后输入个人状态</string>
     <string name="status_update_button">更新状态</string>
 </resources>
