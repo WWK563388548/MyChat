@@ -31,4 +31,5 @@
     <string name="status_title">更新个人状态</string>
     <string name="status_update_hint">点击后输入个人状态</string>
     <string name="status_update_button">更新状态</string>
+    <string name="user_name_in_row">User Name</string>
 </resources>
