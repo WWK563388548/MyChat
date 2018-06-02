@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.myself.wwk.mychat.R
 import com.myself.wwk.mychat.adapters.SectionPagerAdapter
@@ -28,11 +27,6 @@ class DashBoardActivity : AppCompatActivity() {
         main_tabs.setupWithViewPager(dash_ViewPager_Id)
         main_tabs.setTabTextColors(Color.WHITE, Color.GREEN)
 
-        if (intent.extras != null) {
-            var username = intent.extras.get("name")
-            Toast.makeText(this, username.toString(), Toast.LENGTH_LONG)
-                    .show()
-        }
     }
 
     // 设置menu
