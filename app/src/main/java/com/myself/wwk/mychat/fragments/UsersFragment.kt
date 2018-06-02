@@ -29,7 +29,7 @@ class UsersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         mUserDatabase = FirebaseDatabase.getInstance().reference.child("Users")
-        //friend_recycler_view_id.setHasFixedSize(true)
+        friend_recycler_view_id.setHasFixedSize(true)
         friend_recycler_view_id.layoutManager = linearLayoutManager
         friend_recycler_view_id.adapter = UsersAdapter(mUserDatabase!!, requireContext())
 

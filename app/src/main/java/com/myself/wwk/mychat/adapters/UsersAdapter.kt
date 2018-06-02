@@ -31,8 +31,9 @@ class UsersAdapter(databaseQuery: DatabaseReference, var context: Context)
         var userId = getRef(position).key
         viewHolder!!.bindView(user!!, context)
 
+        // 点击显示users列表中每个user
         viewHolder.itemView.setOnClickListener {
-            // 创建AlertDialog
+            // 创建AlertDialog, 有两个选项: 1.进入用户简介界面, 2.进入发送信息界面
             var options = arrayOf("用户简介", "发送信息")
             var builder = AlertDialog.Builder(context)
             builder.setTitle("选择操作")
@@ -76,7 +77,7 @@ class UsersAdapter(databaseQuery: DatabaseReference, var context: Context)
             var userStatus = itemView.findViewById<TextView>(R.id.users_status)
             var userProfilePic = itemView.findViewById<CircleImageView>(R.id.users_profile)
 
-            //set the strings so we can pass in the intent
+            // 设置数据内容, 用于传值（Intent）
             userNameTxt = user.user_name
             userStatusTxt = user.status
             userProfilePicLink = user.thumb_image
