@@ -33,7 +33,8 @@
         <activity android:name=".activities.DashBoardActivity" />
         <activity android:name=".activities.SettingsActivity" />
         <activity android:name=".activities.StatusActivity" />
-        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.ProfileActivity"
+            android:parentActivityName=".activities.DashBoardActivity"/>
         <activity android:name=".activities.ChatActivity"></activity>
     </application>
 
