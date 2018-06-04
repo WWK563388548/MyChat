@@ -32,4 +32,7 @@
     <string name="status_update_hint">点击后输入个人状态</string>
     <string name="status_update_button">更新状态</string>
     <string name="user_name_in_row">User Name</string>
+    <string name="profile_send_message_button">发送信息</string>
+    <string name="profile_user_name">User Name</string>
+    <string name="profile_my_status">My Status</string>
 </resources>
