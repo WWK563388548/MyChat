@@ -35,4 +35,6 @@
     <string name="profile_send_message_button">发送信息</string>
     <string name="profile_user_name">User Name</string>
     <string name="profile_my_status">My Status</string>
+    <string name="message_contents">Messages.....</string>
+    <string name="name_of_users_in_chat">Name of User</string>
 </resources>

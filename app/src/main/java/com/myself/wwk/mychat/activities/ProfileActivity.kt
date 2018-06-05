@@ -57,7 +57,7 @@ class ProfileActivity : AppCompatActivity() {
             override fun onCancelled(databaseError: DatabaseError?) {
                 // 暂时空置
             }
-            
+
         })
     }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/messager_image_view"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile_image"/>
+
+            <TextView
+                android:id="@+id/messages_text_view"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:text="@string/message_contents"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/messager_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/messager_name_text_view"
+                android:layout_below="@id/messages_text_view"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="@string/name_of_users_in_chat"
+                android:textColor="@color/white"
+                android:layout_marginTop="14dp"
+                android:padding="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/messager_image_view"
+                android:background="@drawable/round_cornor_bg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
